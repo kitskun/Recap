@@ -4,43 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML homework 1</title>
-    <link rel="stylesheet" href="/Html lesson 1/styles.css">
+    <link rel="stylesheet" href="./css/normilize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Ivanov Ivan Ivanych</h1>
-    <img src="/Html lesson 1/src/photo.png" alt="my photo">
-    <p>GOIT student</p>
-    <br>
-    <h2>I want to learn frontend because:</h2>
-    <ul>
-        <li>No interest in anything else</li>
-        <li>Small paycheck</li>
-        <li>night shifts</li>
-    </ul>
-    <br>
-    <h2>My phone number</h2>
-    <p>+380909090909</p>
-    <h2>My Vkontakte profile</h2>
-    <a href="#">        vk.com</a>
-    <br>
-    <h2>My feedback</h2>
-    <p>     I can build you a pile of shit</p>
-    <table>
-        <tr>
-          <td>433</td>
-          <td>Киев - Ковель</td>
-          <td>5 часов</td>
-        </tr>
-        <tr>
-          <td>701</td>
-          <td>Харьков - Днепр</td>
-          <td>7 часов</td>
-        </tr>
-        <tr>
-          <td>258</td>
-          <td>Львов - Одесса</td>
-          <td>4 часа</td>
-        </tr>
-      </table>
+    <div class="wrapper">
+      <div class="title">
+      <h1 class="h1_font">IVANOV IVAN IVANYCH</h1>
+    </div>
+      <div class="image_container">
+        <img class="my_img" src="./src/photo.png" alt="my photo" />
+      </div>
+      <p class="main_font tabulation">GOIT student</p>
+      <hr />
+      <h2 class="h2_font">I want to learn frontend because:</h2>
+      <ul>
+        <li class="main_font">No interest in anything else</li>
+        <li class="main_font">Small paycheck</li>
+        <li class="main_font">night shifts</li>
+      </ul>
+      <hr />
+      <h2 class="h2_font">My phone number</h2>
+      <p class="main_font tabulation">+380909090909</p>
+      <h2 class="h2_font">My Vkontakte profile</h2>
+      <a class="social_link tabulation" href="#"> vk.com</a>
+      <hr />
+      <h2 class="h2_font">My feedback</h2>
+      <p class="main_font tabulation">I can build you a pile of shit</p>
+    </div>
   </body>
 </html>
