@@ -86,23 +86,45 @@
   background-size: cover;
 }
 
-.slider_cover {
-    background-color:rgba(0,0,0,.3);
-    height:600px;
-    position: absolute;;
-    width:100%;
+.slider::after {
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  z-index: 1;
 }
 
-.buttons {
+.slider__buttons {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.both-buttons {
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: rgba(26, 188, 156, 0.7);
+  border: none;
+  color: white;
 }
 
 .left-button {
+  margin-right: 142px;
+  margin-bottom: 88px;
 }
 
 .right-button {
+  margin-left: 678px;
+  margin-bottom: 40px;
 }
