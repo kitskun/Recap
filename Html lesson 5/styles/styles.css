@@ -304,6 +304,11 @@
   border: 1px solid white;
 }
 
+.icons:hover {
+  transition-duration: 300ms;
+  background: #1abc9c;
+}
+
 .overlay__cart_button {
   margin-top: 7px;
   margin-left: 38px;
