@@ -11,9 +11,13 @@
   --kaushanScript-font: "Kaushan Script", cursive;
 }
 
+/* whole page, wrapper */
+
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -33,7 +37,78 @@
 
 /* header */
 
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  height: 10vh;
+}
 
+/* logo */
+
+.logo-wrap {
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.logo__text {
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  font-size: 16pt;
+  line-height: 10vh;
+  color: var(--green-color);
+}
+
+/* navigation menu */
+
+.nav-wrap {
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.nav-menu__item {
+  line-height: 10vh;
+}
+
+.nav-menu__item_link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-family: var(--montserrat-font);
+  font-size: 9pt;
+  font-weight: 400;
+  color: var(--green-color);
+}
+
+/* nav menu pseudo */
+
+.nav-menu__item_link::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: var(--red-color);
+  transition: width 0.3s linear;
+  left: 0;
+  bottom: 3vh;
+}
+
+.nav-menu__item_link:hover:before {
+  width: 100%;
+}
+
+.nav-menu__item:hover .nav-menu__item_link {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  color: var(--red-color);
+}
 
 /* footer */
 
