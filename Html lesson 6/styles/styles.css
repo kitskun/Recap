@@ -1,0 +1,44 @@
+/* variables */
+:root {
+  /* colors */
+  --red-color: #f38181;
+  --yellow-color: #fce38a;
+  --light-green-color: #eaffd0;
+  --green-color: #95e1d3;
+  /* fonts */
+  --montserrat-font: "Montserrat", sans-serif;
+  --roboto-font: "Roboto", sans-serif;
+  --kaushanScript-font: "Kaushan Script", cursive;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.page {
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+.wrapper {
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+/* header */
+
+
+
+/* footer */
+
+.footer {
+  height: 50px;
+  background: green;
+  margin-top: auto;
+}
