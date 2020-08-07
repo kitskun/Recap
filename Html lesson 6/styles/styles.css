@@ -21,9 +21,20 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   overflow: hidden;
   max-width: 1920px;
+  font-size: 16px;
 }
 
 .wrapper {
@@ -53,7 +64,7 @@
 .logo__text {
   font-family: var(--montserrat-font);
   font-weight: 700;
-  font-size: 16pt;
+  font-size: 1.6rem;
   line-height: 10vh;
   color: var(--green-color);
 }
@@ -81,7 +92,7 @@
   position: relative;
   text-decoration: none;
   font-family: var(--montserrat-font);
-  font-size: 9pt;
+  font-size: 0.8rem;
   font-weight: 400;
   color: var(--green-color);
 }
@@ -108,6 +119,41 @@
   transition-timing-function: linear;
   transition-duration: 200ms;
   color: var(--red-color);
+}
+
+/* services section Title*/
+
+.services__title_box {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  height: 25vh;
+  overflow: hidden;
+  padding-top: 8.5vh;
+}
+
+.services__title_first {
+  font-family: var(--kaushanScript-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 1.7vh;
+}
+
+.services__title_second {
+  font-family: var(--montserrat-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.services__title_second::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 7vh;
+  background: var(--red-color);
+  left: 47%;
+  bottom: 4vh;
 }
 
 /* footer */
