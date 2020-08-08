@@ -182,6 +182,7 @@ h6 {
   font-family: var(--montserrat-font);
   font-size: 0.8rem;
   font-weight: 400;
+  color: #333333;
 }
 
 .service__box_text {
@@ -192,6 +193,7 @@ h6 {
   font-weight: 400;
   text-align: justify;
   line-height: 2.5vh;
+  color: #999999;
 }
 
 /* icons */
@@ -228,7 +230,19 @@ h6 {
   background: url("../src/digital_icon.png") no-repeat;
 }
 
-/*  */
+/* team title description */
+
+.team-title-description {
+  text-align: center;
+  height: 10vh;
+  line-height: 3vh;
+}
+
+.title-description-text {
+  font-family: var(--roboto-font);
+  font-size: 0.8rem;
+  color: #999999;
+}
 
 /* footer */
 
