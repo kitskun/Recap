@@ -121,9 +121,9 @@ h6 {
   color: var(--red-color);
 }
 
-/* services section Title*/
+/* services and team section titles*/
 
-.services__title_box {
+.title_box {
   position: relative;
   text-align: center;
   vertical-align: middle;
@@ -132,20 +132,20 @@ h6 {
   padding-top: 8.5vh;
 }
 
-.services__title_first {
+.title_first {
   font-family: var(--kaushanScript-font);
   font-size: 1.2rem;
   font-weight: 400;
   padding-bottom: 1.7vh;
 }
 
-.services__title_second {
+.title_second {
   font-family: var(--montserrat-font);
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.services__title_second::after {
+.title_second::after {
   display: block;
   position: absolute;
   content: "";
@@ -156,6 +156,80 @@ h6 {
   bottom: 4vh;
 }
 
+/* service list */
+
+.services-wrapper {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  max-height: 50vh;
+  height: 38vh;
+  padding-top: 3vh;
+}
+
+.service__box {
+  position: relative;
+  height: 10vh;
+  width: 35vh;
+  padding-left: 5vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.service__box_title {
+  font-family: var(--montserrat-font);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.service__box_text {
+  padding-top: 2vh;
+  padding-bottom: 0.5vh;
+  font-family: var(--roboto-font);
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 2.5vh;
+}
+
+/* icons */
+
+.service__box::before {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  left: -3vh;
+}
+
+.photography::before {
+  background: url("../src/photography.png") no-repeat;
+}
+
+.web-design::before {
+  background: url("../src/webdesign_icon.png") no-repeat;
+}
+
+.creativity::before {
+  background: url("../src/creativity_icon.png") no-repeat;
+}
+
+.seo::before {
+  background: url("../src/seo_icon.png") no-repeat;
+}
+
+.css-html::before {
+  background: url("../src/csshtml_icon.png") no-repeat;
+}
+
+.digital::before {
+  background: url("../src/digital_icon.png") no-repeat;
+}
+
+/*  */
+
 /* footer */
 
 .footer {
@@ -163,3 +237,4 @@ h6 {
   background: green;
   margin-top: auto;
 }
+
