@@ -319,7 +319,14 @@
           </div>
           <div class="form-wrap">
             <form action="subscribe" class="form">
-              <input class="email__input" type="email" placeholder="    Your email..." name="email-address">
+              <input
+                class="email__input"
+                type="email"
+                placeholder="    Your email..."
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder ='   Your email...'"
+                name="email-address"
+              />
               <button class="subscribe">SUBSCRIBE</button>
             </form>
           </div>
